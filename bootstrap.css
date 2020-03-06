@@ -1,0 +1,49 @@
+html{
+  overflow-x: hidden;
+}
+body{
+  color: #fff!important;
+}
+main{
+  min-height: 100vh;
+  background: var(--back-color);
+  width: 100%!important;
+}
+td{
+  text-overflow: ellipsis;
+  max-height: 40px!important;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100px;
+}
+.td-min{
+  width: 30px;
+}
+p{
+  padding: 0;
+  margin: 0;
+}
+.d-flex {
+  position: relative;
+  flex-wrap: wrap;
+}
+.d-flexcenter{
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+  position: relative!important;
+  flex-wrap: wrap!important;
+}
+.bg-dark{
+  background: #000!important;
+}
+a.navbar-brand{
+  color: var(--base-color)!important;
+}
+.width{
+  width: 100%;
+}
+.mp-0{
+  margin: 0!important;
+  padding: 0!important;
+}
