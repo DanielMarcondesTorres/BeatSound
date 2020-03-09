@@ -4,10 +4,42 @@ html{
 body{
   color: #fff!important;
 }
+.tmn{
+  width: 200px;
+  padding: 10px;
+  height: 300px;
+}
+.tmn2{
+  height: 160px;
+  padding: none;
+  width: 100%;
+  background: var(--darkgray)!important;
+}
+.table-dark td, .table-dark th, .table-dark thead th {
+    background: var(--darkgray)!important;
+}
+.tmn2 img{
+  height: 160px;
+  width: auto;
+}
+.tmnflex{
+  height: 620px;
+  overflow: hidden;
+}
 main{
   min-height: 100vh;
   background: var(--back-color);
   width: 100%!important;
+}
+td{
+  text-overflow: ellipsis;
+  max-height: 40px!important;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100px;
+}
+.td-min{
+  width: 30px;
 }
 p{
   padding: 0;
