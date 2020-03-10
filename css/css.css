@@ -21,6 +21,9 @@
   background: var(--back-color);
   position: fixed;
 }
+.minimal{
+  font-size: 12px;
+}
 .pm-0{
   padding: 0;
   margin:0;
