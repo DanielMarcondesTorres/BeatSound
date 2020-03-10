@@ -1,0 +1,139 @@
+.hearta{
+  background: url(../images/heart1.png)!important;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+
+}
+.heigth{
+  min-height: 100vh!important;
+  width: 100vw;
+}
+.full{
+  min-height: 100vh;
+  width: 100%!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--back-color);
+  position: fixed;
+}
+.minimal{
+  font-size: 12px;
+}
+.pm-0{
+  padding: 0;
+  margin:0;
+}
+.bgx{
+  background: linear-gradient(var(--base-color),var(--purple));
+  border: calc(var(--width)*.002) solid var(--fiap);
+  height: calc(var(--width)*.2);
+  width: calc(var(--width)*.2);
+  border-radius: 360px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.fully{
+  position: absolute;
+  margin-left: 50%;
+  padding: calc(var(--width)*.02);
+  filter: invert(1);
+}
+.centered{
+  position: absolute;
+  margin: auto;
+}
+.slick-next{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  width: 30px;
+  z-index: 1;
+  margin: 5px;
+  transform: rotate(-90deg);
+  padding: 0!important;
+  background: none!important;
+  border: none!important;
+  outline: none!important;
+}
+.slick-prev{
+  position: absolute;
+  top: 0;
+  right: 40px;
+  height: 30px;
+  width: 30px;
+  z-index: 1;
+  margin: 5px;
+  transform: rotate(90deg);
+  padding: 0!important;
+  background: none!important;
+  border: none!important;
+  outline: none!important;
+}
+.d-flexcenter p {
+  width: 100%;
+}
+arrows{
+  position: absolute!important;
+  top: 10px;
+  right: 10px;
+  border-radius: 360px;
+  width: 80px;
+  height: 40px;
+  background: #222;
+  display: block;
+
+}
+.slick-track{
+  margin-top: 60px;
+}
+slider{
+  position: relative;
+  display: block;
+  margin-top:30px;
+  margin-bottom: 30px;
+}
+slider div div .img-fluid{
+  width: 100%!important;
+}
+slider div div {
+  margin-left: 20px!important;
+  margin-right: 20px!important;
+}
+slider titulo{
+  position: absolute!important;
+  height: 40px;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+  padding: 0;
+}
+titulo{
+  font-size: 20px;
+  font-weight: 700;
+  display: flex!important;
+  align-content: center!important;
+  justify-content: flex-start!important;
+  flex-wrap: wrap!important;
+  text-align: left;
+}
+.slick-list{
+  padding-right: 40px;
+}
+@media screen and (max-width: 480px) {
+    arrows{
+      display: none;
+    }
+    slider div div {
+      margin-left: 0px!important;
+      margin-right: 20px!important;
+    }
+}
