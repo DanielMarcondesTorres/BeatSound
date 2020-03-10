@@ -9,6 +9,24 @@ body{
   padding: 10px;
   height: 260px;
 }
+.invert{
+  filter: invert(100);
+}
+.border-1{
+  border-width: 1px!important;
+}
+.border-2{
+  border-width: 2px!important;
+}
+.border-3{
+  border-width: 3px!important;
+}
+.border-4{
+  border-width: 4px!important;
+}
+.border-5{
+  border-width: 5px!important;
+}
 perfil{
   height: 160px;
   width: 160px;
@@ -59,7 +77,7 @@ perfil{
   width: 50%;
 }
 .tmnflex{
-  height: 580px;
+  height: 550px;
   overflow: hidden;
 }
 main{
