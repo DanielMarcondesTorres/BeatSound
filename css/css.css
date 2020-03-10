@@ -23,6 +23,8 @@
 }
 .minimal{
   font-size: 12px;
+  font-weight: 100;
+  color:rgba(255, 255, 255, 0.5);
 }
 .pm-0{
   padding: 0;
