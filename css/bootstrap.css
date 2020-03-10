@@ -17,6 +17,7 @@ body{
 }
 .table-dark td, .table-dark th, .table-dark thead th {
     background: var(--darkgray)!important;
+    border-color: var(--back-color);
 }
 .tmn2 img{
   height: 160px;
@@ -31,6 +32,17 @@ main{
   background: var(--back-color);
   width: 100%!important;
 }
+social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  background: var(--darkgray);
+  border-radius: 360px;
+  margin: 5px;
+}
+
 td{
   text-overflow: ellipsis;
   max-height: 40px!important;
