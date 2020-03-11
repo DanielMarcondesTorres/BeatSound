@@ -4,44 +4,25 @@
 {
   display: block;
   position: relative;
-  top: 75px;
-  left: 25px;
-
-
   z-index: 1;
-
   -webkit-user-select: none;
   user-select: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 30px;
 }
-
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: #000;
-}
-
 
 #menuToggle input
 {
   display: block;
-  width: 40px;
-  height: 32px;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: -7px;
-  left: -5px;
-
+  top: 0px;
+  left: 0px;
   cursor: pointer;
-
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-
+  opacity: 0;
+  z-index: 2;
   -webkit-touch-callout: none;
 }
 
@@ -53,81 +34,124 @@
   display: block;
   width: 33px;
   height: 4px;
-  margin-bottom: 5px;
+  margin-top: 5px;
   position: relative;
 
-  background: #cdcdcd;
+  background: var(--base-color);
   border-radius: 3px;
 
   z-index: 1;
 
-  transform-origin: 4px 0px;
+  transform-origin: 4px 2px;
 
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
 }
-
-#menuToggle span:first-child
+#menuToggle input:checked ~ span:nth-last-child(1)
 {
-  transform-origin: 0% 0%;
+  transform: rotate(-45deg);
 }
 
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #ddd;
-}
-
-#menuToggle input:checked ~ span:nth-last-child(3)
+#menuToggle input:checked ~ span:nth-last-child(2)
 {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2)
+#menuToggle input:checked ~ span:nth-last-child(3)
 {
-  transform: rotate(-45deg) translate(0, -1px);
+  transform: rotate(45deg);
 }
 
-#menu
-{
-  position: absolute;
-  width: 30%;
-  min-width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
 
-
-  background: #121212;
+.menu{
+  position: fixed!important;
+  top: 57px;
+  bottom: 0;
+  width: 300px;
+  height: 100vh;
+  background: var(--darkgray);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
+}
 
+.fechado{
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+.aberto{
+  transform-origin: 0% 0%;
+  transform: translate(0%, 0);
 
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li
-{
-  padding: 5px 0;
-  font-size: 15px;
-  color: #fff;
+.percentual{
+  margin-top: 10px;
+  margin-left: 30px;
+  padding-top: 22px;
+  border: 1px solid;
+  border-radius: 200px;
+  width: 75px;
+  height: 75px;
+  color: #777;
 }
 
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
+.textoAulas{
+  font-size: 15px;
+  margin-top: -60px;
+  margin-right: 25px;
+  text-align: justify;
+  color: #777;
+}
+
+.textoDiferente{
+   color: #bbb;
+   font-size: 12px;
+}
+
+.espaco{
+  margin-top: 50px;
+}
+
+.textoEspecifico{
+  color: #555;
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+#textoEspecifico1{
+  color: #555;
+  padding-right: 10px;
+  margin-top: -10px;
+  font-size: 27px;
+  padding-bottom: 30px;
+
+}
+
+.parte2{
+  background: #212121;
+
+}
+
+.espaco2{
+  padding: 20px;
+
+}
+
+.tamanhoIMG{
+  width: 32px;
+  height: 32px;
+}
+
+.tamanhoIconesAula{
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.textolista{
+  text-decoration: none;
 }
