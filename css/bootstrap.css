@@ -1,6 +1,9 @@
 html{
   overflow-x: hidden;
 }
+nav{
+  z-index: 5;
+}
 body{
   color: #fff!important;
 }
