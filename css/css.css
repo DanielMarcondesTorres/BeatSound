@@ -12,7 +12,9 @@
   width: 0!important;
   height: 0!important;
   overflow: hidden!important;
-
+  top: 50%;
+  position: absolute;
+  left: 50%;
 }
 .abrir .fechar{
   position: absolute;
@@ -39,8 +41,8 @@
   transform-origin: 4px 2px;
 
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  opacity 0.55s ease;
 }
 .abrir .fechar span:nth-last-child(1)
 {
@@ -59,7 +61,7 @@
 }
 
 .abrir {
-  transition: 1s;
+  transition: .5s;
   height: 100vh!important;
   width: 100%!important;
   position: fixed!important;
@@ -71,6 +73,7 @@
   justify-content: center;
   flex-wrap: wrap;
   z-index: 6;
+  left: 0;
 }
 
 .play{
@@ -207,11 +210,11 @@ titulo{
   padding-right: 40px;
 }
 @media screen and (max-width: 480px) {
-    arrows{
-      display: none;
-    }
-    slider div div {
-      margin-left: 0px!important;
-      margin-right: 20px!important;
-    }
+  arrows{
+    display: none;
+  }
+  slider div div {
+    margin-left: 0px!important;
+    margin-right: 20px!important;
+  }
 }
