@@ -1,4 +1,20 @@
 
+document.getElementById('convidar').addEventListener("click", function(e){
+  if (document.getElementById('code').classList.contains("abrir")) {
+    document.getElementById('code').classList.remove("abrir");
+  }else {
+    document.getElementById('code').classList.add("abrir");
+  }
+});
+document.getElementById('fechar').addEventListener("click", function(e){
+  if (document.getElementById('code').classList.contains("abrir")) {
+    document.getElementById('code').classList.remove("abrir");
+  }else {
+    document.getElementById('code').classList.add("abrir");
+  }
+});
+
+
 $(document).ready(function(){
   $('.slick-disponiveis').slick({
     centerMode: false,
