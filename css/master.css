@@ -1,3 +1,5 @@
+
+
 #menuToggle
 {
   display: block;
@@ -84,4 +86,72 @@
   transform: translate(0%, 0);
 
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.percentual{
+  margin-top: 10px;
+  margin-left: 30px;
+  padding-top: 22px;
+  border: 1px solid;
+  border-radius: 200px;
+  width: 75px;
+  height: 75px;
+  color: #777;
+}
+
+.textoAulas{
+  font-size: 15px;
+  margin-top: -60px;
+  margin-right: 25px;
+  text-align: justify;
+  color: #777;
+}
+
+.textoDiferente{
+   color: #bbb;
+   font-size: 12px;
+}
+
+.espaco{
+  margin-top: 50px;
+}
+
+.textoEspecifico{
+  color: #555;
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+#textoEspecifico1{
+  color: #555;
+  padding-right: 10px;
+  margin-top: -10px;
+  font-size: 27px;
+  padding-bottom: 30px;
+
+}
+
+.parte2{
+  background: #212121;
+
+}
+
+.espaco2{
+  padding: 20px;
+
+}
+
+.tamanhoIMG{
+  width: 32px;
+  height: 32px;
+}
+
+.tamanhoIconesAula{
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.textolista{
+  text-decoration: none;
 }

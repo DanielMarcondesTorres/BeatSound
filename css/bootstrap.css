@@ -27,6 +27,13 @@ body{
 .border-5{
   border-width: 5px!important;
 }
+a{
+  color: var(--base-color);
+}
+a:hover{
+  color: var(--purple);
+  text-decoration: none;
+}
 perfil{
   height: 160px;
   width: 160px;
@@ -123,6 +130,9 @@ p{
 }
 .bg-dark{
   background: #000!important;
+}
+.bg-darkgray{
+  background: var(--darkgray)!important;
 }
 a.navbar-brand{
   color: var(--base-color)!important;

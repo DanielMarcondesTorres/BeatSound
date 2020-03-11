@@ -8,6 +8,19 @@
   z-index: 1000;
 
 }
+.play{
+  background: var(--base-color);
+  border-radius: 5px;
+  padding: 2px;
+  padding-left: 7px;
+  padding-right: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 300;
+  color:rgba(255, 255, 255, 0.5);
+}
 .heigth{
   min-height: 100vh!important;
   width: 100vw;
@@ -112,7 +125,7 @@ slider titulo{
   position: absolute!important;
   height: 40px;
   top: 10px;
-  left: 10px;
+  left: 15px;
   margin: 0;
   padding: 0;
 }
