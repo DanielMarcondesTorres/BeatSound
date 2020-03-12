@@ -46,7 +46,6 @@ document.addEventListener('mousemove', function(event) {
   }
 }, true);
 document.addEventListener('touchmove', function(event) {
-  console.log(isDown);
   if (isDown) {
     if (event.touches[0].clientX - offset > 100) {
       document.getElementById('menu').classList.remove("fechado");
