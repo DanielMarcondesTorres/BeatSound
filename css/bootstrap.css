@@ -7,6 +7,10 @@ nav{
 body{
   color: #fff!important;
 }
+video{
+  width: 80%;
+  max-width: 1080px;
+}
 .tmn{
   width: 200px;
   padding: 10px;
@@ -133,6 +137,9 @@ p{
 }
 .bg-dark{
   background: #000!important;
+}
+.bg-gray{
+  background: var(--gray)!important;
 }
 .bg-darkgray{
   background: var(--darkgray)!important;

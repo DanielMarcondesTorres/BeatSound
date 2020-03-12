@@ -73,6 +73,7 @@
   background: var(--darkgray);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
+  z-index: 2;
 }
 
 ::-webkit-scrollbar-track {
@@ -94,7 +95,6 @@
 .aberto{
   transform-origin: 0% 0%;
   transform: translate(0%, 0);
-
   transition: transform 0.5s;
 }
 
@@ -107,14 +107,13 @@
 
   .mainaberta{
     transition: .5s;
-    margin-left: 300px!important;
+    padding-left: 300px!important;
   }
 }
 
 .percentual{
   margin-top: 15px;
-  margin-left: 30px;
-  padding-top: 22px;
+  margin-left: 20px;
   border: 1px solid;
   border-radius: 200px;
   width: 75px;
@@ -154,36 +153,22 @@
 
 }
 
-.parte2{
-  background: #212121;
-
-}
-
-.espaco2{
-  padding: 20px;
-
-}
 
 .tamanhoIMG{
   width: 32px;
   height: 32px;
 }
-
 .tamanhoIconesAula{
   width: 16px;
   height: 16px;
   margin-right: 10px;
 }
-
-.textolista{
-  text-decoration: none;
+.list-group-item:hover{
+  z-index: 2;
+    color: #fff!important;
+    background-color: #007bff!important;
+    border-color: #007bff!important;
 }
-
-.parte3{
-  margin-top:30px;
-  font-size: 12px;
-}
-
 .tamanhoIMG2{
   margin-left: 40px;
   padding: 10px;
