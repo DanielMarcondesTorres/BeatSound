@@ -1,0 +1,230 @@
+
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 30px;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-top: 5px;
+  position: relative;
+
+  background: var(--base-color);
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 2px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+#menuToggle input:checked ~ span:nth-last-child(1)
+{
+  transform: rotate(-45deg);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  transform: rotate(45deg);
+}
+
+
+.menu{
+  position: fixed!important;
+  top: 57px;
+  bottom: 0;
+  width: 300px;
+  height: 100vh;
+  overflow: scroll;
+  background: var(--darkgray);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #444;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background: #333;
+}
+
+.fechado{
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s;
+}
+.aberto{
+  transform-origin: 0% 0%;
+  transform: translate(0%, 0);
+
+  transition: transform 0.5s;
+}
+
+#main{
+  transition: .5s;
+  margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+  .mainaberta{
+    transition: .5s;
+    margin-left: 300px!important;
+  }
+}
+
+.percentual{
+  margin-top: 15px;
+  margin-left: 30px;
+  padding-top: 22px;
+  border: 1px solid;
+  border-radius: 200px;
+  width: 75px;
+  height: 75px;
+  color: #777;
+}
+
+.textoAulas{
+  font-size: 15px;
+  margin-top: -60px;
+  margin-right: 25px;
+  text-align: justify;
+  color: #777;
+}
+
+.textoDiferente{
+   color: #bbb;
+   font-size: 12px;
+}
+
+.espaco{
+  margin-top: 50px;
+}
+
+.textoEspecifico{
+  color: #555;
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+#textoEspecifico1{
+  color: #555;
+  padding-right: 10px;
+  margin-top: -10px;
+  font-size: 27px;
+  padding-bottom: 30px;
+
+}
+
+.parte2{
+  background: #212121;
+
+}
+
+.espaco2{
+  padding: 20px;
+
+}
+
+.tamanhoIMG{
+  width: 32px;
+  height: 32px;
+}
+
+.tamanhoIconesAula{
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.textolista{
+  text-decoration: none;
+}
+
+.parte3{
+  margin-top:30px;
+  font-size: 12px;
+}
+
+.tamanhoIMG2{
+  margin-left: 40px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  background: var(--darkgray);
+}
+
+.selectAula{
+
+  padding-left: 10px;
+  color: #fff;
+  margin-left: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #222 url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat;
+  background-position: 218px center;
+  width: 250px;
+  height:30px;
+  border:1px solid #111;
+}
+
+
+
+#puxador{
+  position: absolute;
+  top: 57px;
+  bottom: 0;
+  width:57px;
+  left: 0;
+  z-index: 10;
+}
+
+.videoaula{
+  width: 100%;
+}
+
+.textoIniciosite{
+  margin: 10px;
+  margin-left: 50px;
+}
