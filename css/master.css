@@ -1,5 +1,3 @@
-
-
 #menuToggle
 {
   display: block;
@@ -71,10 +69,21 @@
   bottom: 0;
   width: 300px;
   height: 100vh;
+  overflow: scroll;
   background: var(--darkgray);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  transition: 1s;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #444;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background: #333;
 }
 
 .fechado{
@@ -89,8 +98,21 @@
   transition: transform 0.5s;
 }
 
+#main{
+  transition: .5s;
+  margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+  .mainaberta{
+    transition: .5s;
+    margin-left: 300px!important;
+  }
+}
+
 .percentual{
-  margin-top: 10px;
+  margin-top: 15px;
   margin-left: 30px;
   padding-top: 22px;
   border: 1px solid;
@@ -131,25 +153,7 @@
   padding-bottom: 30px;
 
 }
-#main{
-  transition: .5s;
-  margin-left: 0;
-}
-@media screen and (min-width: 768px) {
 
-  .mainaberta{
-    transition: .5s;
-    margin-left: 300px!important;
-  }
-}
-#puxador{
-  position: absolute;
-  top: 57px;
-  bottom: 0;
-  width:57px;
-  left: 0;
-  z-index: 10;
-}
 .parte2{
   background: #212121;
 
@@ -173,4 +177,52 @@
 
 .textolista{
   text-decoration: none;
+}
+
+.parte3{
+  margin-top:30px;
+  font-size: 12px;
+}
+
+.tamanhoIMG2{
+  margin-left: 40px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  background: var(--darkgray);
+}
+
+.selectAula{
+
+  padding-left: 10px;
+  color: #fff;
+  margin-left: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #222 url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat;
+  background-position: 218px center;
+  width: 250px;
+  height:30px;
+  border:1px solid #111;
+}
+
+
+
+#puxador{
+  position: absolute;
+  top: 57px;
+  bottom: 0;
+  width:57px;
+  left: 0;
+  z-index: 10;
+}
+
+.videoaula{
+  width: 100%;
+}
+
+.textoIniciosite{
+  margin: 10px;
+  margin-left: 50px;
 }
