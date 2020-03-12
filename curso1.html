@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/variaveis.css">
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="MyA/MyAnimation.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Beat Music</title>
+</head>
+<body>
+
+  <div id="carregador" class="full MyA mya-disappearBlur myaDuration-07 myaDelay-17 myaFillmode-forwards">
+    <div class="bgx MyA Mya_appearBlur/.5s/same/0s/alternate/1/none_heartPulse/1s/same/.5s/alternate/1/none_disappearBlur/0.5s/same/1.5s/alternate/1/forwards">
+      <img src="images/wave.png" class="img img-fluid centered" alt="">
+      <img src="images/clave.png" class="img img-fluid fully" alt="">
+    </div>
+  </div>
+  <main>
+
+    <div id="puxador"></div>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-dark">
+      <div id="menuToggle">
+        <input id="inpu" type="checkbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <a class="navbar-brand" href="index.html">{LOGO}</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Categorias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Populares</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Recomendados</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link pb-0" href="#"><svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.6197 13.2363C21.6197 7.51758 18.6461 5.57227 15.865 5.13867C15.865 5.10937 15.8707 5.08008 15.8707 5.04492C15.8707 4.32422 15.2533 3.75 14.5 3.75C13.7467 3.75 13.152 4.32422 13.152 5.04492C13.152 5.08008 13.152 5.10937 13.1576 5.13867C10.3709 5.57812 7.38027 7.5293 7.38027 13.248C7.38027 19.916 5.77734 20.6309 3.625 22.5059H25.375C23.234 20.625 21.6197 19.9043 21.6197 13.2363Z" fill="white" fill-opacity="0.5"/>
+              <path d="M14.5113 26.25C16.0293 26.25 17.2754 25.084 17.4396 23.7305H11.583C11.7416 25.084 12.9934 26.25 14.5113 26.25Z" fill="white" fill-opacity="0.5"/>
+              <ellipse cx="22.7167" cy="5.5" rx="2.41667" ry="2.5" fill="#128DF6"/>
+            </svg>
+            <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle pb-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path d="M15 29.4C22.9529 29.4 29.4 22.9529 29.4 15C29.4 7.04711 22.9529 0.600006 15 0.600006C7.04711 0.600006 0.600006 7.04711 0.600006 15C0.600006 22.9529 7.04711 29.4 15 29.4Z" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                  <path d="M17.9598 21.3168C17.8722 20.3496 17.9058 19.6746 17.9058 18.7908C18.3438 18.561 19.1286 17.0958 19.2612 15.858C19.6056 15.8298 20.1486 15.4938 20.3076 14.1672C20.3934 13.455 20.0526 13.0542 19.845 12.9282C20.4054 11.2428 21.5694 6.0288 17.6922 5.49C17.2932 4.7892 16.2714 4.4346 14.9436 4.4346C9.63119 4.5324 8.99039 8.4462 10.155 12.9282C9.94799 13.0542 9.60719 13.455 9.69239 14.1672C9.85199 15.4938 10.3944 15.8298 10.7388 15.858C10.8708 17.0952 11.6868 18.561 12.126 18.7908C12.126 19.6746 12.159 20.3496 12.0714 21.3168C11.3148 23.3508 7.42919 23.5098 5.18759 25.4712C7.53119 27.831 11.3292 29.5188 15.3372 29.5188C19.3452 29.5188 24.0564 26.3544 24.8406 25.491C22.6128 23.5116 18.7182 23.358 17.9598 21.3168Z" fill="white" fill-opacity="0.5"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="30" height="30" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              {User Name}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+     <div id="menu" class="menu fechado">
+       <!-- Parte 1 conteudo do menu hamburguer -->
+       <div>
+        <div class="percentual">
+          <div class="text-center">
+            0%
+          </div>
+        </div>
+        <div class="textoAulas">
+          <div class="text-right">
+            <p>Guitar Hacks - Workout</p>
+            <p class="textoDiferente">0 de 96 aulas completas</p>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <p class="textoDiferente espaco"><span class="textoEspecifico">AULA</span> <span id="texto2esp">Seu novo negócio começa aqui!</span><p id="textoEspecifico1">01</p>
+        </div>
+      </div>
+      <!-- fim parte 1 conteudo do menu hamburguer -->
+
+      <!-- Parte 2 conteudo do menu hamburguer -->
+      <div class="parte2">
+        <figure class="espaco2">
+          <img src="images/tituloAula.png" class="tamanhoIMG" alt=""><span class="textoAulas col-lg-8">ATIVIDADES</span>
+        </figure>
+        <ul class="list-group list-group-flush listaulas">
+          <a href="#"><li class="list-group-item active parte2 textolista"><img src="images/videos.png" class="tamanhoIconesAula" alt="">Introdução</li></a>
+          <a href="#"><li class="list-group-item parte2 textolista"><img src="images/livroAula.png" class="tamanhoIconesAula" alt="">Boas-Vindas</li></a>
+          <a href="#"><li class="list-group-item parte2 textolista"><img src="images/videos.png" class="tamanhoIconesAula" alt="">Lean Startup</li></a>
+          <a href="#"><li class="list-group-item parte2 textolista"><img src="images/listaAula.png" class="tamanhoIconesAula" alt="">Quer ser um empreendedor?</li></a>
+          <a href="#"><li class="list-group-item parte2 textolista"><img src="images/listaAula.png" class="tamanhoIconesAula" alt="">Startup de tecnologia?</li></a>
+          <a href="#"><li class="list-group-item parte2 textolista"><img src="images/videos.png" class="tamanhoIconesAula" alt="">Validação e Hipótese</li></a>
+          <a href="#"><li class="list-group-item parte2 textolista"><img src="images/listaAula.png" class="tamanhoIconesAula" alt="">Problema,solução ou cliente</li></a>
+          <a href="#"><li class="list-group-item parte2 textolista"><img src="images/livroAula.png" class="tamanhoIconesAula" alt="">O que aprendemos nessa aula?</li></a>
+        </ul>
+
+      </div>
+      <div>
+        <figure>
+          <img src="livroAula.png" alt=""> Aulas
+        </figure>
+          <select class="" name="">
+            <option value="">Aula 1</option>
+            <option value="">Aula 2</option>
+            <option value="">Aula 3</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="MyA/MyAnimation.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+</html>
