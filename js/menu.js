@@ -4,10 +4,12 @@ try {
       document.getElementById('menu').classList.remove("fechado");
       document.getElementById('menu').classList.add("aberto");
       document.getElementById('puxador').style.left = "300px";
+      document.getElementById('main').classList.add("mainaberta");
     }else {
       document.getElementById('menu').classList.add("fechado");
       document.getElementById('menu').classList.remove("aberto");
       document.getElementById('puxador').style.left = "0px";
+      document.getElementById('main').classList.remove("mainaberta");
     }
   });
 } catch (e) {
@@ -25,6 +27,14 @@ document.getElementById('puxador').addEventListener('touchend', function() {
   isDown = false;
 }, true);
 
+document.getElementById('puxador').addEventListener('mousedown', function(e) {
+  isDown=true;
+  offset =event.clientX;
+}, true);
+document.getElementById('puxador').addEventListener('mouseup', function() {
+  isDown = false;
+}, true);
+
 document.addEventListener('mousemove', function(event) {
   event.preventDefault();
   if (isDown) {
@@ -34,11 +44,13 @@ document.addEventListener('mousemove', function(event) {
       document.getElementById("inpu").checked = true;
       isDown = false;
       document.getElementById('puxador').style.left = "300px";
+      document.getElementById('main').classList.add("mainaberta");
     }else {
       document.getElementById('menu').classList.add("fechado");
       document.getElementById('menu').classList.remove("aberto");
       document.getElementById("inpu").checked = false;
       document.getElementById('puxador').style.left = "0px";
+      document.getElementById('main').classList.remove("mainaberta");
     }
     if (event.clientX - offset > 300 || event.clientX - offset <= 0 ) {
       isDown = false;
@@ -53,11 +65,13 @@ document.addEventListener('touchmove', function(event) {
       document.getElementById("inpu").checked = true;
       isDown = false;
       document.getElementById('puxador').style.left = "300px";
+      document.getElementById('main').classList.add("mainaberta");
     }else {
       document.getElementById('menu').classList.add("fechado");
       document.getElementById('menu').classList.remove("aberto");
       document.getElementById("inpu").checked = false;
       document.getElementById('puxador').style.left = "0px";
+      document.getElementById('main').classList.remove("mainaberta");
     }
     if (event.touches[0].clientX - offset > 300 || event.touches[0].clientX - offset <= 0 ) {
       isDown = false;

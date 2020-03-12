@@ -80,13 +80,13 @@
 .fechado{
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: transform 0.5s;
 }
 .aberto{
   transform-origin: 0% 0%;
   transform: translate(0%, 0);
 
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: transform 0.5s;
 }
 
 .percentual{
@@ -130,6 +130,17 @@
   font-size: 27px;
   padding-bottom: 30px;
 
+}
+#main{
+  transition: .5s;
+  margin-left: 0;
+}
+@media screen and (min-width: 768px) {
+
+  .mainaberta{
+    transition: .5s;
+    margin-left: 300px!important;
+  }
 }
 #puxador{
   position: absolute;
