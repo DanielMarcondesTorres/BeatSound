@@ -74,6 +74,7 @@
   background: var(--darkgray);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
+  transition: 1s;
 }
 
 .fechado{
@@ -130,7 +131,14 @@
   padding-bottom: 30px;
 
 }
-
+#puxador{
+  position: absolute;
+  top: 57px;
+  bottom: 0;
+  width:57px;
+  left: 0;
+  z-index: 10;
+}
 .parte2{
   background: #212121;
 
