@@ -3,9 +3,11 @@ try {
     if (document.getElementById('menu').classList.contains("fechado")) {
       document.getElementById('menu').classList.remove("fechado");
       document.getElementById('menu').classList.add("aberto");
+      document.getElementById('puxador').style.left = "300px";
     }else {
       document.getElementById('menu').classList.add("fechado");
       document.getElementById('menu').classList.remove("aberto");
+      document.getElementById('puxador').style.left = "0px";
     }
   });
 } catch (e) {
@@ -15,8 +17,6 @@ try {
 var offset = 0;
 var div = document.getElementById("menu");
 var isDown = false;
-// Add Pointer Event Listener
-
 document.getElementById('puxador').addEventListener('touchstart', function(e) {
   isDown=true;
   offset =event.touches[0].clientX;
