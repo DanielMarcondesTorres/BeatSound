@@ -3,7 +3,10 @@ html{
 }
 nav{
   z-index: 5;
+  position: fixed!important;
+  width: 100%!important;
 }
+
 body{
   color: #fff!important;
 }
@@ -163,4 +166,7 @@ a.navbar-brand{
     width: 80%;
     max-width: 1080px;
   }
+}
+.conteudo{
+  padding-top: 57px!important;
 }
