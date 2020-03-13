@@ -1,0 +1,220 @@
+.hearta{
+  background: url(../images/heart1.png)!important;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+
+}
+.qrcode {
+  width: 0!important;
+  height: 0!important;
+  overflow: hidden!important;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+}
+.abrir .fechar{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.fechar{
+  background: none;
+  border: none;
+}
+.abrir .fechar span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-top: 5px;
+  position: relative;
+
+  background: var(--base-color);
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 2px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  opacity 0.55s ease;
+}
+.abrir .fechar span:nth-last-child(1)
+{
+  transform: rotate(-45deg);
+}
+
+.abrir .fechar span:nth-last-child(2)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.abrir .fechar span:nth-last-child(3)
+{
+  transform: rotate(45deg);
+}
+
+.abrir {
+  transition: .5s;
+  height: 100vh!important;
+  width: 100%!important;
+  position: fixed!important;
+  top: 0!important;
+  bottom: 0!important;
+  background: rgba(0, 0, 0, 0.9)!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 6;
+  left: 0;
+}
+
+.play{
+  background: var(--base-color);
+  border-radius: 5px;
+  padding: 2px;
+  padding-left: 7px;
+  padding-right: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 300;
+  color:rgba(255, 255, 255, 0.5);
+}
+.heigth{
+  min-height: 100vh!important;
+  width: 100vw;
+}
+.full{
+  min-height: 100vh;
+  width: 100%!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--back-color);
+  position: fixed;
+}
+.minimal{
+  font-size: 12px;
+  font-weight: 100;
+  color:rgba(255, 255, 255, 0.5);
+}
+.pm-0{
+  padding: 0;
+  margin:0;
+}
+.bgx{
+  background: linear-gradient(var(--base-color),var(--purple));
+  border: calc(var(--width)*.002) solid var(--fiap);
+  height: calc(var(--width)*.2);
+  width: calc(var(--width)*.2);
+  border-radius: 360px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.fully{
+  position: absolute;
+  margin-left: 50%;
+  padding: calc(var(--width)*.02);
+  filter: invert(1);
+}
+.centered{
+  position: absolute;
+  margin: auto;
+}
+.slick-next{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  width: 30px;
+  z-index: 1;
+  margin: 5px;
+  transform: rotate(-90deg);
+  padding: 0!important;
+  background: none!important;
+  border: none!important;
+  outline: none!important;
+}
+.slick-prev{
+  position: absolute;
+  top: 0;
+  right: 40px;
+  height: 30px;
+  width: 30px;
+  z-index: 1;
+  margin: 5px;
+  transform: rotate(90deg);
+  padding: 0!important;
+  background: none!important;
+  border: none!important;
+  outline: none!important;
+}
+
+arrows{
+  position: absolute!important;
+  top: 10px;
+  right: 10px;
+  border-radius: 360px;
+  width: 80px;
+  height: 40px;
+  background: #222;
+  display: block;
+
+}
+.slick-track{
+  margin-top: 60px;
+}
+slider{
+  position: relative;
+  display: block;
+  margin-top:30px;
+  margin-bottom: 30px;
+}
+slider div div .img-fluid{
+  width: 100%!important;
+}
+slider div div {
+  margin-left: 20px!important;
+  margin-right: 20px!important;
+}
+slider titulo{
+  position: absolute!important;
+  height: 40px;
+  top: 10px;
+  left: 15px;
+  margin: 0;
+  padding: 0;
+}
+titulo{
+  font-size: 20px;
+  font-weight: 700;
+  display: flex!important;
+  align-content: center!important;
+  justify-content: flex-start!important;
+  flex-wrap: wrap!important;
+  text-align: left;
+}
+.slick-list{
+  padding-right: 40px;
+}
+@media screen and (max-width: 480px) {
+  arrows{
+    display: none;
+  }
+  slider div div {
+    margin-left: 0px!important;
+    margin-right: 20px!important;
+  }
+}
