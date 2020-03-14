@@ -17,6 +17,7 @@ nav{
 }
 slider div div a img{
   border: 1px rgba(61,61,61,.75) solid;
+  border-radius: 5px;
 }
 body{
   color: #fff!important;
