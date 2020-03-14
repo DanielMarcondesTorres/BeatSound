@@ -83,10 +83,12 @@ body{
 }
 
 .testab svg{
-  height: 200px;
+  height: calc(var(--width)*.2);
+  width: calc(var(--width)*.2);
 }
 .testab img{
-  height: 200px;
+  height: calc(var(--width)*.2);
+  width: calc(var(--width)*.2);
   margin-top: 40px;
     margin-right: 20px;
 }

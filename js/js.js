@@ -57,7 +57,6 @@ try {
           breakpoint: 768,
           settings: {
             arrows: true,
-            centerMode: false,
             slidesToShow: 2
           }
         },
@@ -65,11 +64,8 @@ try {
           breakpoint: 480,
           settings: {
             arrows: false,
-            centerMode: false,
-            slidesToShow: 2,
-            centerMode: true,
-            centerPadding: '30px',
-            infinite:false
+            infinite:false,
+            slidesToShow: 2
           }
         }
       ]

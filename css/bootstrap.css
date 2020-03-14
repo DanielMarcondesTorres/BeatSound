@@ -7,7 +7,9 @@ html{
   width: 200px;
   margin-bottom: -20px;
   margin-top: -15px;
+  margin-right: 0;
 }
+
 nav{
   z-index: 5;
   position: fixed!important;
@@ -165,9 +167,6 @@ p{
 .bg-darkgray{
   background: var(--darkgray)!important;
 }
-a.navbar-brand{
-  color: var(--base-color)!important;
-}
 .width{
   width: 100%;
 }
@@ -185,4 +184,10 @@ a.navbar-brand{
     width: 80%;
     max-width: 1080px;
   }
+}
+@media screen and (max-width: 480px) {
+  .draggable{
+    padding-left: 30px;
+  }
+
 }

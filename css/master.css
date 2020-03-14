@@ -197,13 +197,12 @@
 
 #puxador{
   position: absolute;
-  top: 57px;
+  top: 30px;
   bottom: 0;
-  width:57px;
+  width:37px;
   left: 0;
   z-index: 10;
 }
-
 .videoaula{
   width: 100%;
 }
