@@ -7,6 +7,14 @@
 body{
   background: var(--back-color);
 }
+text {
+  fill: #FF9800;
+}
+body {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 35px;
+}
+
 .clock{
   width: 350px;
   height: 350px;

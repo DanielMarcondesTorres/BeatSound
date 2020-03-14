@@ -15,7 +15,9 @@ nav{
 .heart svg:hover{
   fill:#a30000;
 }
-
+slider div div a img{
+  border: 1px rgba(61,61,61,.75) solid;
+}
 body{
   color: #fff!important;
 }
