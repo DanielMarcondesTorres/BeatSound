@@ -1,13 +1,4 @@
-.hearta{
-  background: url(../images/heart1.png)!important;
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1000;
 
-}
 .qrcode {
   width: 0!important;
   height: 0!important;
