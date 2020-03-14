@@ -66,7 +66,7 @@ try {
           settings: {
             arrows: false,
             centerMode: false,
-            slidesToShow: 1,
+            slidesToShow: 2,
             centerMode: true,
             centerPadding: '30px',
             infinite:false
@@ -93,7 +93,7 @@ try {
           settings: {
             arrows: false,
             centerMode: false,
-            slidesToShow: 1,
+            slidesToShow: 2,
             centerMode: true,
             centerPadding: '30px',
             infinite:false
@@ -104,4 +104,4 @@ try {
   });
 } catch (e) {
 
-} 
+}
