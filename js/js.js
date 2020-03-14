@@ -93,7 +93,7 @@ try {
           settings: {
             arrows: false,
             centerMode: false,
-            slidesToShow: 2,
+            slidesToShow: 1,
             centerMode: true,
             centerPadding: '30px',
             infinite:false
