@@ -9,7 +9,9 @@ html{
   margin-top: -15px;
   margin-right: 0;
 }
-
+a:focus{
+  outline: none;
+}
 nav{
   z-index: 5;
   position: fixed!important;
