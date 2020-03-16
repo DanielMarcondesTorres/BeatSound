@@ -1,3 +1,30 @@
+.charge{
+  min-height: calc(var(--width)*.2);
+  min-width: calc(var(--width)*.2);
+  display: flex;
+  justify-content: center;
+}
+.charge svg{
+  height: calc(var(--width)*.2);
+  width: calc(var(--width)*.2);
+}
+.cls-14{
+  fill: transparent;
+  box-shadow: inset 10px 10px 10px var(--box-shadow);
+  transform-origin: center;
+  animation: circu 1s infinite forwards;
+}
+@keyframes circu {
+  0%{
+    transform: rotateZ(0deg);
+  }
+  0%{
+    transform: rotateZ(360deg);
+  }
+}
+
+
+
 
 .qrcode {
   width: 0!important;
@@ -207,5 +234,9 @@ titulo{
   slider div div {
     margin-left: 0px!important;
     margin-right: 20px!important;
+  }
+  .charge svg{
+    height: calc(var(--width)*.5);
+    width: calc(var(--width)*.5);
   }
 }
