@@ -9,6 +9,20 @@ html{
   margin-top: -15px;
   margin-right: 0;
 }
+.dropdown-dark .dropdown-item:focus, .dropdown-dark .dropdown-item:hover {
+    text-decoration: none;
+    background-color: var(--base-color);
+}
+.dropdown-dark .dropdown-item{
+    color: var(--text-color);
+    text-decoration: none;
+    background-color: var(--darkgray);
+}
+.dropdown-dark{
+    color: var(--text-color);
+    text-decoration: none;
+    background-color: var(--darkgray);
+}
 a:focus{
   outline: none;
 }

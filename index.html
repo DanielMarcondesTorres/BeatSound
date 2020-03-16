@@ -38,8 +38,15 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Populares</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="forum.html">Forúm</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Forum
+            </a>
+            <div class="dropdown-menu dropdown-dark" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Meus Tópicos</a>
+              <a class="dropdown-item" href="#">Procurar Tópico</a>
+              <a class="dropdown-item" href="#">Criar Tópico</a>
+            </div>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
@@ -69,7 +76,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               {User Name}
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu dropdown-menu-right dropdown-dark" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
               <div class="dropdown-divider"></div>
